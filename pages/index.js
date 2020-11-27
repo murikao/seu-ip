@@ -1,5 +1,6 @@
 import React  from "react";
 import Image from 'next/image'
+import Head from 'next/head'
 
 
 
@@ -60,6 +61,12 @@ function home({data}) {
     console.log(geo.status)
 
      return  (
+       <div>
+      <Head>
+      <title>Seu IP</title>
+      <meta property="og:title" content="Seu IP" key="title" />
+    </Head>
+    
   <div style={{alignItems: "center",
             display: "flex",
             flexDirection: "column",
@@ -82,6 +89,7 @@ function home({data}) {
                    <strong> <font color="red"> Murikão</font>
                    </strong>
               </h4>
+          </div>
           </div>)
   } 
 
