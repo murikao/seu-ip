@@ -14,11 +14,11 @@ interface Props {
     query: string
   }
 }
-export const ipRes = async (ip4: string) =>
+/* export const ipRes = async (ip4: string) =>
   await fetch(
     `https://king.host/wiki/wp-content/themes/kinghost-wiki/includes/ip-api.php?ip=${ip4}`
   )
-
+ */
 export const getServerSideProps: GetServerSideProps = async ({ req }) => {
   // Fetch data from external API
 
@@ -40,20 +40,21 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
   }
   ip4 = localIp.test(ip4) ? '' : ip4
 
-  /*  const res = await fetch(
+  console.log(`ipv4:${ip4} ipReq:${ip} ipValido:${_ip}`)
+  const res = await fetch(
     `https://king.host/wiki/wp-content/themes/kinghost-wiki/includes/ip-api.php?ip=${ip4}`
   )
   const dataProp = await res.json()
- */
-  const dataip = await (await ipRes(ip4)).json()
+
+  // const dataip = await (await ipRes(ip4)).json()
 
   console.log(new Date())
   // console.log(dataProp)
-  console.log('dataip')
-  console.log(dataip)
+  console.log('dataProp')
+  console.log(dataProp)
 
   // Pass data to the page via props
-  return { props: { data: dataip } }
+  return { props: { data: dataProp } }
 }
 
 const Home: NextPage<Props> = ({ data }) => {

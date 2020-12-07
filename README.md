@@ -1,8 +1,17 @@
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+![SEU IP](https://raw.githubusercontent.com/murikao/seu-ip/main/public/img/ip.svg) 
+# -------------
+# -  SEU IP -
+# -------------
 
-This is a [Next.js](https://nextjs.org/) boilerplate based on that is used in a course called [React Avançado](https://reactavancado.com.br/).
+This is a [Next.js](https://nextjs.org/) project serve side rendering, based on that is used in a course called [React Avançado](https://reactavancado.com.br/).
 
+## Descrição
+Basicamente este programa fornece o ip da requisição http e busca outras informações numa api
+**Seu IP**
+**127.0.0.5**
 
+**Localização: Belo Horizonte, MG, Brazil - (BR)**
+**Operadora : Claro S.A.**
 ## What is inside?
 
 This project uses lot of stuff as:
