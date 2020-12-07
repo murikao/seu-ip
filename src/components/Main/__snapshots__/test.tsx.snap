@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main /> should render the heading 1`] = `
+.c0 {
+  background-color: #06092b;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  margin-bottom: 2rem;
+  width: min(10rem,50%);
+}
+
+.c2 {
+  font-size: 2.5rem;
+}
+
+.c4 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.c6 {
+  margin-top: 3rem;
+  width: max(30%,15rem);
+  height: min(15rem,70%);
+}
+
+.c3 {
+  font-size: 3rem;
+  color: yellow;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.c5 {
+  font-size: 2rem;
+  color: yellow;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+<main
+  class="c0"
+>
+  <img
+    alt="Imagem de localizador tipo google maps azul escrito IP dentro."
+    class="c1"
+    src="/img/ip.svg"
+  />
+  <h1
+    class="c2"
+  >
+    Seu IP
+  </h1>
+  <span
+    class="c3"
+  >
+     
+    127.0.0.0
+  </span>
+  <h2
+    class="c4"
+  >
+    Abaixo algumas informações do seu endereço IP
+    <br />
+    <br />
+    Localização:
+    <span
+      class="c5"
+    >
+       
+      city
+      , 
+      XX
+      , 
+      country
+       - (
+      XX
+      )
+    </span>
+    <br />
+    <br />
+    Operadora : 
+    <span
+      class="c5"
+    >
+      Xxxx S.A.
+    </span>
+  </h2>
+  <img
+    alt="Um mapa do mundo com linhas ligando os endereços de ip"
+    class="c6"
+    src="/img/worldIp.jpg"
+  />
+</main>
+`;
