@@ -37,8 +37,8 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Seu IP</title>
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-icon.png" />
+        {/* <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" /> */}
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"

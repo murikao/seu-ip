@@ -41,11 +41,12 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
   ip4 = localIp.test(ip4) ? '' : ip4
 
   console.log(`ipv4:${ip4} ipReq:${ip} ipValido:${_ip}`)
+  // let res: any
   const res = await fetch(
     `https://king.host/wiki/wp-content/themes/kinghost-wiki/includes/ip-api.php?ip=${ip4}`
   )
-  const dataProp = await res.json()
 
+  const dataProp = await res.json()
   // const dataip = await (await ipRes(ip4)).json()
 
   console.log(new Date())
@@ -58,6 +59,6 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
 }
 
 const Home: NextPage<Props> = ({ data }) => {
-  return <Main data={data} />
+  return <>{process.browser && <Main data={data} />}</>
 }
 export default Home
