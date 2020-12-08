@@ -1,4 +1,6 @@
-![SEU IP](https://raw.githubusercontent.com/murikao/seu-ip/main/public/img/ip.svg) 
+
+  <Image  src=https://raw.githubusercontent.com/murikao/seu-ip/main/public/img/ip.svg alt="ip client" width=125 height=150/>
+
 # -------------
 # -  SEU IP -
 # -------------
@@ -7,11 +9,19 @@ This is a [Next.js](https://nextjs.org/) project serve side rendering, based on 
 
 ## Descrição
 Basicamente este programa fornece o ip da requisição http e busca outras informações numa api
-**Seu IP**
-**127.0.0.5**
 
-**Localização: Belo Horizonte, MG, Brazil - (BR)**
-**Operadora : Claro S.A.**
+
+<h2>Seu IP 
+
+<font color="orange">192.168.0.1</font></h2>
+  
+<h3 style={{ color: 'white' }}>
+             Localização:<font color="orange">  Cidade, UF, Pais - (BR)</font>
+             <br/>
+             <br/>
+             Operadora : <font color="orange"> Sua Operadora SA</font></h3>
+  <br/>
+
 ## What is inside?
 
 This project uses lot of stuff as:
@@ -78,3 +88,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Deploy on Vercel
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details
+
+<font color="red">***OBS:*** Deploy no vercel não está funconando, apenas informa o ip 127.0.0.1. e operadora a Amazon. Creio que  que tem redirect. No meu servidor funciona normal.
+</font>
+Para testar [http://ip.ddns.net](http://ip.ddns.net)
