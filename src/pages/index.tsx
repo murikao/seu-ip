@@ -56,7 +56,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
   ipOk = localIp.test(ipOk) ? '' : ipOk
   // let res: any
   const res = await fetch(
-    `https://king.host/wiki/wp-content/themes/kinghost-wiki/includes/ip-api.php?ip=${ipOk}`
+    `http://ip-api.com/json/${ipOk}?fields:58111&lang=pt-BR`
   )
 
   const dataProp = await res.json()
